@@ -11,3 +11,30 @@ https://unduck.link?q=%s
 DuckDuckGo does their redirects server side. Their DNS is...not always great. Result is that it often takes ages.
 
 I solved this by doing all of the work client side. Once you've went to https://unduck.link once, the JS is all cache'd and will never need to be downloaded again. Your device does the redirects, not me.
+
+## How to setup a Docker Container 🐳?
+
+To build the Docker image you can use this Docker Compose with the image that I have already prebuilt.
+
+```docker
+version: '3.8'
+
+services:
+  unduck:
+    image: csmith1865/unduck:0.0.0
+    volumes:
+      - unduck:/app
+    ports:
+      - "8083:80"  # Do not change the right port
+    restart: unless-stopped  # Optional: restart policy for the container
+volumes:
+  unduck:
+```
+
+## How to build the Docker Image 🐳?
+
+To build the Docker Image you can use the provided Dockerfile and run this command.
+
+```sh
+sudo docker build -t unduck .
+```
