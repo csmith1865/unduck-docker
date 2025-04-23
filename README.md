@@ -21,7 +21,7 @@ version: '3.8'
 
 services:
   unduck:
-    image: csmith1865/unduck:0.0.0
+    image: csmith1865/unduck:latest
     volumes:
       - unduck:/app
     ports:
