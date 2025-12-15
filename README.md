@@ -21,7 +21,7 @@ version: '3.8'
 
 services:
   unduck:
-    image: csmith1865/unduck:latest
+    image: ghcr.io/csmith1865/unduck-docker:latest
     volumes:
       - unduck:/app
     ports:
