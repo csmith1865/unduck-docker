@@ -3,6 +3,15 @@
 export const bangs = [
   {
     c: "AI",
+    d: "chatgpt.com/",
+    r: 0,
+    s: "ChatGPT",
+    sc: "AI",
+    t: "gpt",
+    u: "https://chatgpt.com/?prompt={{{s}}}",
+  },
+  {
+    c: "AI",
     d: "www.t3.chat",
     r: 0,
     s: "T3 Chat",
@@ -44206,15 +44215,6 @@ export const bangs = [
     sc: "Travel",
     t: "gpsies",
     u: "http://gpsies.de/?q={{{s}}}",
-  },
-  {
-    c: "Online Services",
-    d: "www.google.pt",
-    r: 223,
-    s: "Google PT",
-    sc: "Google",
-    t: "gpt",
-    u: "https://www.google.pt/search?q={{{s}}}",
   },
   {
     c: "News",
